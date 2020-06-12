@@ -39,13 +39,13 @@
     </Data>
     <Environment>
         <Variable>
-            <Value>172.17.0.10:9200</Value>
+            <Value>http://172.17.0.10:9200</Value>
             <Name>ELASTICSEARCH_URL</Name>
             <Mode/>
         </Variable>
     </Environment>
     <Labels/>
     <Config Name="Port" Target="5601" Default="5601" Mode="tcp" Description="Host port to be exposed." Type="Port" Display="always" Required="true" Mask="false">5601</Config>
-    <Config Name="Elasticsearch url" Target="ELASTICSEARCH_URL" Default="172.17.0.10:9200" Mode="" Description="Elasticsearch url container ip:port ELASTICSEARCH_URL" Type="Variable" Display="always" Required="true" Mask="false">172.17.0.10:9200</Config>
-    <Config Name="Elasticsearch host" Target="ELASTICSEARCH_HOSTS" Default="172.17.0.10:9200" Mode="" Description="Elasticsearch host container ip:port ELASTICSEARCH_HOSTS" Type="Variable" Display="always" Required="true" Mask="false">172.17.0.10:9200</Config>
+    <Config Name="Elasticsearch url" Target="ELASTICSEARCH_URL" Default="http://172.17.0.10:9200" Mode="" Description="Elasticsearch url container ip:port ELASTICSEARCH_URL" Type="Variable" Display="always" Required="true" Mask="false">http://172.17.0.10:9200</Config>
+    <Config Name="Elasticsearch host" Target="ELASTICSEARCH_HOSTS" Default="http://172.17.0.10:9200" Mode="" Description="Elasticsearch host container ip:port ELASTICSEARCH_HOSTS" Type="Variable" Display="always" Required="true" Mask="false">http://172.17.0.10:9200</Config>
 </Container>
