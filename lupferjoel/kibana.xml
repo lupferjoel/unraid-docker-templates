@@ -17,7 +17,7 @@
     <Date>2019-04-01</Date>
     <WebUI>http://[IP]:[PORT:5601]/</WebUI>
     <TemplateURL/>
-    <Icon>https://github.com/lupferjoel/unraid-docker-templates/raw/master/icons/kibana.png</Icon>
+    <Icon>https://github.com/lupferjoel/unraid-docker-templates/raw/master/icons/elastic-kibana.png</Icon>
     <PostArgs/>
     <CPUset/>
     <DonateText/>
