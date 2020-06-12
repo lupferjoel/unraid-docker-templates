@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>kibana</Name>
+    <Repository>kibana/kibana:7.7.0</Repository>
+    <Registry>https://hub.docker.com/_/kibana</Registry>
+    <Network>bridge</Network>
+    <MyIP/>
+    <Shell>bash</Shell>
+    <Privileged>false</Privileged>
+    <Support></Support>
+    <Project>https://www.elastic.co/</Project>
+    <Overview>
+        Kibana with instructions for installation on unraid. [br][br]&#xD;
+    </Overview>
+    <Beta>False</Beta>
+    <Category>Other: Tools:</Category>
+    <Date>2019-04-01</Date>
+    <WebUI>http://[IP]:[PORT:5601]/</WebUI>
+    <TemplateURL/>
+    <Icon>https://github.com/lupferjoel/unraid-docker-templates/raw/master/icons/kibana.png</Icon>
+    <PostArgs/>
+    <CPUset/>
+    <DonateText/>
+    <DonateLink/>
+    <Description>
+        Kibana with instructions for installation on unraid. [br][br]&#xD;
+    </Description>
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish>
+            <Port>
+                <HostPort>5601</HostPort>
+                <ContainerPort>5601</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
+    <Data>
+    </Data>
+    <Environment>
+        <Variable>
+            <Value>172.17.0.10:9200</Value>
+            <Name>ELASTICSEARCH_URL</Name>
+            <Mode/>
+        </Variable>
+    </Environment>
+    <Labels/>
+    <Config Name="Port" Target="5601" Default="5601" Mode="tcp" Description="Host port to be exposed." Type="Port" Display="always" Required="true" Mask="false">5601</Config>
+    <Config Name="Elasticsearch url" Target="ELASTICSEARCH_URL" Default="172.17.0.10:9200" Mode="" Description="Elasticsearch url container ip:port ELASTICSEARCH_URL" Type="Variable" Display="always" Required="true" Mask="false">172.17.0.10:9200</Config>
+    <Config Name="Elasticsearch host" Target="ELASTICSEARCH_HOSTS" Default="172.17.0.10:9200" Mode="" Description="Elasticsearch host container ip:port ELASTICSEARCH_HOSTS" Type="Variable" Display="always" Required="true" Mask="false">172.17.0.10:9200</Config>
+</Container>
