@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
     <Name>kibana</Name>
-    <Repository>kibana/kibana:7.7.0</Repository>
+    <Repository>kibana/kibana:7.7.1</Repository>
     <Registry>https://hub.docker.com/_/kibana</Registry>
     <Network>bridge</Network>
     <MyIP/>
